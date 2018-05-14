@@ -1,0 +1,84 @@
+
+
+
+what .js-language can do with HTML-page in browser-envi?
+
+using browser provided web-APIs,
+JavaScript-lang can bring any dynamic activity/data to web-page
+ 
+browser-APIs :  ==> are based on 'w3c' recommendations ,
+they are implemented & abstracted as JavaScript objects & functions
+
+browser-APIs  :
+    ==> DOM, XHR/fetch,Timer
+
+
+using DOM
+------------
+ -> can create,retreive,update,delete HTML elements
+ -> can change element's inner text/html content 
+ -> can change element's attributes/properties
+ -> can change element's styles ( css )
+ -> can validate form-fields 
+ -> can create rich UI-components
+
+
+using XHR / Fetch
+-------------------
+ -> can communicate with server-side programs async ( AJAX )
+
+
+using Timer API
+---------------
+ -> can execute any action on timeout/time-interval
+
+
+HTML 5 APIs
+---------------
+
+    ref : https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+
+
+----------------------------------------------------
+
+problems with plain-js ( your-code ) with browser-apis
+
+    => browser compatability issues
+    => memory issues ( i.e clean un-used DOM-elements)
+    => performance issues ( i.e DOM manipulation should be minimal)
+    => too much code for simple operations
+    => data-binding is manual
+    => code organization is difficult..
+
+
+
+soln:
+
+    => by using third-party's javascript lib & F.Ws
+
+    
+    1. jQuery  ( ==> DOM utility lib)    
+
+    MVC & MVVM based lib & F.Ws
+
+    2. knockout.js
+    3. backbone.js  , marionet.js
+    4. AngularJS  from google-team
+    5. EmberJS
+    6. DOJO
+    7. ExJS
+    ........
+
+
+    web-components / custom-elements standard/spec ( from w3c )
+
+
+
+    -> React.JS   from 'facebook' team  : v16
+    -> Angular                          : v5
+    -> Aurelia
+    -> Vue.js
+    ...
+
