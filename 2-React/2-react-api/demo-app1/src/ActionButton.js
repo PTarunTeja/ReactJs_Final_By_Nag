@@ -13,22 +13,24 @@ class ActionButton extends Component {
     }
     handleBtnClick(e) {
         let { count } = this.state;
-        let { onAction } = this.props;
+        let { onAction, value } = this.props;
         this.setState({ count: count + 1 }, () => {
-            onAction();
+            let { count } = this.state;
+            onAction(count * value);
         })
     }
     render() {
         console.log('ActionButton :: render()');
         let { value } = this.props;
         let { count } = this.state;
+        let className=`btn ${value>0?'btn-success':'btn-danger'}`;
         return (
             <div className="action-btn">
                 <div className="card">
                     <div className="card-body">
-                        <button onClick={(e) => { this.handleBtnClick(e) }} className="btn btn-primary">
+                        <button onClick={(e) => { this.handleBtnClick(e) }} className={className}>
                             {value} : &nbsp;
-                            <span className="badge badge-danger">{count}</span>
+                            <span className="badge badge-dark">{count}</span>
                         </button>
                     </div>
                 </div>
