@@ -1,0 +1,8 @@
+
+> npm i create-react-app -g  ( 1 time command )
+
+> create-react-app demo-app1
+> cd demo-app1
+> npm i bootstrap --save
+> npm start
+

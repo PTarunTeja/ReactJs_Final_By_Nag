@@ -1,0 +1,60 @@
+
+
+
+.js-developement , without module standards & loaders
+
+    problems
+    ----------
+    => global-naming collisions
+    => loading dependency-modules in order
+
+
+    ---------------------------------------
+
+    soln :
+
+        from third-parties, we got some module standards & loaders
+
+        -> AMD ( Async Module Definition )
+
+            loader : Require.js 
+
+        -> commonJS 
+        -> UMD
+
+        ..............    
+
+    ---------------------------------------
+
+    commonJS module-standard
+
+    => every .js-file is module
+    => all var/functions in a .js-file are private
+    => to abstract/export any member, use 'module.exports' object
+    => to require/import any module , use 'require()'
+    => we can group related modules into package , with description file 'package.json'
+
+
+    imp-note : Node.js runtime implemented this standard as default module standard
+
+    ---------------------------------------
+
+
+    NPM ( Node Package Manager)
+
+    => cli tool
+    => to publish/install javascript packages from npm-repository
+
+
+    ---------------------------------------
+
+    // ECMAScript community
+
+    // in ES6 ==> ES modules
+
+
+    => every .js-file is module
+    => all var/functions in a .js-file are private
+    => to abstract/export any member, use 'export'
+    => to require/import any module , use 'import'
+    => we can group related modules into package , with description file 'package.json'
