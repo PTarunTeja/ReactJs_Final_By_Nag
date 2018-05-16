@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo_ds": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://user1:user1@ds117730.mlab.com:17730/shop-db",
+    "database": "shop_db",
+    "password": "",
+    "name": "mongo_ds",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
