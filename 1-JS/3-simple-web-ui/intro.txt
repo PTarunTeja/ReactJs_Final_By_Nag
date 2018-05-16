@@ -1,6 +1,5 @@
 
 
-
 what .js-language can do with HTML-page in browser-envi?
 
 using browser provided web-APIs,
@@ -81,4 +80,22 @@ soln:
     -> Aurelia
     -> Vue.js
     ...
+
+
+
+----------------------------------------------------------
+.js is
+    -> all IO operations by default non-blocking
+    -> single-threaded process , can execute concurrent actions due to non-blocking IO
+-----------------------------------------------------------
+ browser   e.g chrome
+    1. JavaScript runtime/engine  ( v8 )  : ECMAScript spec
+            - single-call-stack   : to execute functions
+            - heap                : to keep objects
+    2. Web APIs ( e.g DOM , XHR/fetch , Timer, HTML5 APIs)  : w3c recommendations
+    3. Event Queue
+    4. Event-Loop         
+-----------------------------------------------------------
+
+
 
